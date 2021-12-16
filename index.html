@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Calculatrice</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="ecran">
+            <input class="ecran_clac" type="" disabled>
+        </div>
+    
+        <div class="fonction">
+            <div>
+                <button class="btn" onclick="calcul('**')">X^Y</button>
+                <button class="btn" onclick="calcul('**2')">X^2</button>
+                <button class="btn" onclick="calcul('abs')">&#124;x&#124;</button>
+                <button class="btn" onclick="calcul('ln')">Ln</button>
+                <button class="btn" onclick="calcul('log')">Log</button>
+                <button class="btn" onclick="calcul('sin')">Sin</button>
+            </div>
+            <div>
+                <button class="btn" onclick="calcul('cos')">Cos</button>
+                <button class="btn" onclick="calcul('tan')">Tan</button>
+                <button class="btn" onclick="calcul('sqrt')">&#8730;x</button>
+                <button class="btn" onclick="calcul('expo')">Expo</button>
+                <button class="btn" onclick="etteindre('on')">On</button>
+                <button class="btn" onclick="secondFonc('/')">2nd</button>
+            </div>
+        
+        </div>
+        <div class="calculatrice">
+            <div class="calc_gauche">
+                <div>
+                    <button class="btn-1 btn" onclick="calcul(1)">1</button>
+                    <button class="btn-4 btn" onclick="calcul(4)">4</button>
+                    <button class="btn-7 btn" onclick="calcul(7)">7</button>
+                    <button class="btn-0 btn" onclick="calcul(0)">0</button>
+                </div>
+                <div>
+                    <button class="btn-2 btn" onclick="calcul(2)">2</button>
+                    <button class="btn-5 btn" onclick="calcul(5)">5</button>
+                    <button class="btn-8 btn" onclick="calcul(8)">8</button>
+                    <button class="point btn" onclick="calcul('.')">.</button>
+                </div>
+                <div>
+                    <button class="btn-3 btn" onclick="calcul(3)">3</button>
+                    <button class="btn-6 btn" onclick="calcul(6)">6</button>
+                    <button class="btn-9 btn" onclick="calcul(9)">9</button>
+                    <button class="para_gauche btn" onclick="calcul('(')">(</button>
+                </div>
+                
+            </div>
+            <div class="calc_droite">
+                <div class="calc_droite_1">
+                    <button class="del btn" onclick="supr()">DEL</button>
+                    <button class="multiple btn" onclick="calcul('*')">x</button>
+                    <button class="add btn" onclick="calcul('+')">+</button>
+                    <button class="para_droite btn" onclick="calcul(')')">)</button>
+                </div>
+                <div class="calc_droite_2">
+                    <button class="ac btn" onclick="suprAll()">AC</button>
+                    <button class="division btn" onclick="calcul('/')">/</button>
+                    <button class="soustraction btn" onclick="calcul('-')">-</button>
+                    <button class="egal btn" onclick="egale()">=</button>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+</html>
