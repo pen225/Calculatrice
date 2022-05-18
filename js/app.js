@@ -24,12 +24,35 @@ function egale() {
         if (valeur_input.includes("sin")) {
             let valeur_convertie = valeur_input.replace("sin", "Math.sin");
             ecran.value = eval(valeur_convertie);
+        }else if(valeur_input.includes("cos")){
+            let valeur_convertie = valeur_input.replace("cos", "Math.cos");
+            ecran.value = eval(valeur_convertie);
+        }else if(valeur_input.includes("tan")){
+            let valeur_convertie = valeur_input.replace("tan", "Math.tan");
+            ecran.value = eval(valeur_convertie);
+        }else if (valeur_input.includes("exp")){
+            let valeur_convertie = valeur_input.replace("exp", "Math.exp");
+            ecran.value = eval(valeur_convertie);
+        }else if (valeur_input.includes("log")){
+            let valeur_convertie = valeur_input.replace("log", "Math.log10");
+            ecran.value = eval(valeur_convertie);
+        }else if(valeur_input.includes("ln")){
+            let valeur_convertie = valeur_input.replace("ln", "Math.log");
+            ecran.value = eval(valeur_convertie);
+        }else if (valeur_input.includes("sqrt")){
+            let valeur_convertie = valeur_input.replace("sqrt", "Math.sqrt");
+            ecran.value = eval(valeur_convertie);
+        }else if (valeur_input.includes("abs")) {
+            let valeur_convertie = valeur_input.replace("abs", "Math.abs");
+            ecran.value = eval(valeur_convertie);
+        }else if (valeur_input.includes("abs")) {
+
         }
     }else{
-
+        ecran.value = eval(valeur_input);
+        console.log(valeur_input);
     }
-    ecran.value = eval(valeur_input);
-    console.log(valeur_input);
+    
 }
 
 //egale
